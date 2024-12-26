@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test1
+{
+
+    public class Maths
+    {
+        public void Area(int a)
+        {
+            int areaofSqure = a * a;
+
+            Console.WriteLine("areaofSqure" + areaofSqure);
+        }
+
+        public void Area(int a, int b)
+        {
+            int areaofRectangle = a * b;
+            Console.WriteLine("rectangle" + areaofRectangle);
+        }
+    }
+
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Maths M = new Maths();
+
+            M.Area(5);
+            M.Area(3, 9);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+//Polymorphism
+
+//1) Compliler time Polymorphism (method Overloading) - method with same name but diffrent parameters
+
+//2)Run time Polymorphism (Method Overriding) -  Method with same name with same parameter in Parent and child class in inheritance .
