@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test1
+{
+
+    public class TV
+    {
+        public virtual void Display()
+        {
+            Console.WriteLine("TV");
+        }
+    }
+    public class Mobile : TV
+    {
+        public override void Display()
+        {
+            Console.WriteLine("Mobile");
+        }
+    }
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            TV t = new TV();
+            Mobile m = new Mobile();
+            
+            t.Display();
+            m.Display();
+            Console.ReadKey();
+        }
+    }
+}
+
+//Polymorphism
+
+//1) Compliler time Polymorphism (method Overloading) - method with same name but diffrent parameters
+
+//2)Run time Polymorphism (Method Overriding) -  Method with same name with same parameter in Parent and child class in inheritance .
