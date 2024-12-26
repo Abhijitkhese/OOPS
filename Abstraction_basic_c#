@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test1
+{
+    abstract class Bike
+    {
+        public abstract void shine();
+    }
+     class Car : Bike
+    {
+        public override void shine()
+        {
+            Console.WriteLine("Car and Bike ");
+        }
+    }
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Car car = new Car();
+            car.shine();
+            
+            Console.ReadKey();
+        }
+    }
+}
+
+//Abstraction - Hiding complex implementation & showing only required features 
+//1) Interface - It Defines a Set of methods without implementation 
+//2) Abstraction -  Hiding complex implementation & showing only required features 
