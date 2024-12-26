@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test1
+{
+
+    interface IAnimal
+    {
+        void Dog();
+        void Cat();
+    }
+
+    public class Animal : IAnimal
+    {
+        public void Dog()
+        {
+            Console.WriteLine("Dog");
+        }
+        public void Cat()
+        {
+            Console.WriteLine("Cat");        
+        }
+    }
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            IAnimal animal = new Animal();
+            animal.Dog();
+            animal.Cat();
+
+            Console.ReadKey();
+        }
+    }
+}
+
+//Abstraction - Hiding complex implementation & showing only required features 
+//1) Interface - It Defines a Set of methods without implementation 
+//2) Abstraction -  Hiding complex implementation & showing only required features 
