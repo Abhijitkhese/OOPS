@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace Test1
 {
-    abstract class Bike
+    abstract class Animal
     {
-        public abstract void shine();
+        public abstract void Sleep();
     }
-     class Car : Bike
+
+    class Dog : Animal
     {
-        public override void shine()
+        public override void Sleep()
         {
-            Console.WriteLine("Car and Bike ");
+            Console.WriteLine("Sleeping");
         }
     }
 
@@ -23,9 +24,11 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            Car car = new Car();
-            car.shine();
-            
+
+            Animal animal = new Dog();
+
+            animal.Sleep();
+
             Console.ReadKey();
         }
     }
